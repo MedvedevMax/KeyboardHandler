@@ -27,9 +27,18 @@ override func viewDidLoad() {
 ## Available methods
 
 ```swift
+/// Activate constraint when keyboard appears
 public func activate(constraint: NSLayoutConstraint)
+
+/// Deactivate constraint when keyboard appears
 public func deactivate(constraint: NSLayoutConstraint)
+
+/// Lift up the view when keyboard appears
 public func liftUp(view: UIView)
+
+/// Lift up constraint (e.g. bottom constraint)
 public func liftUp(constraint: NSLayoutConstraint, multiply: Double = 1.0, plus: Double = 0.0)
+
+/// Hide keyboard by tapping on view (e.g. background view)
 public func hideKeyboardByTap(onView view: UIView)
 ```
